@@ -112,10 +112,11 @@ header.top .title_group .secondary_btn {
 }
 
 /* sections common */
-section header {
+section {
     position: relative;
+}
+section header {
     text-align: center;
-    overflow: hidden;
 }
 section header h2 {
     font-weight: 600;
@@ -150,6 +151,7 @@ section i.circle {
     background-color: #F6F8FD;
     padding: 20px;
     margin: 0;
+    z-index: 1;
 }
 .carousel figure img {
     width: 100%;
@@ -193,7 +195,7 @@ section#featured {
 padding: 100px 0;
 }
 section#featured header i.circle {
-    top: -300px;
+    top: -200px;
     left: -170px;
     z-index: -1;
 }
@@ -226,6 +228,7 @@ section#listings {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 section#listings header h2, section#listings header p {
@@ -238,11 +241,11 @@ section#listings i.circle {
     opacity: 0.2;
 }
 section#listings i.circle.left {
-    top: 600px;
+    top: 700px;
     left: -85px;
 }
 section#listings i.circle.right {
-    top: 200px;
+    top: 300px;
     right: -100px;
 }
 section#listings a.view_more {
@@ -250,7 +253,7 @@ section#listings a.view_more {
     margin-top: 80px;
 }
 
-section#self_storage_sale, section#buy_self_storage {
+section#self_storage_sale {
     background-color: #E8EFFF;
     border-bottom-right-radius: 300px;
     display: flex;
@@ -260,7 +263,6 @@ section#self_storage_sale, section#buy_self_storage {
 section#self_storage_sale header, section#buy_self_storage header {
     margin: 260px auto;
     flex: 1;
-    overflow: visible;
     position: unset;
     padding-left: 100px;
 }
@@ -297,6 +299,8 @@ section#self_storage_sale .angle_deco img:first-child {
 
 section#buy_self_storage {
     background-color: #FFFFFF;
+    display: flex;
+    position: relative;
     flex-direction: row-reverse;
 }
 section#buy_self_storage .angle_deco img {
@@ -305,4 +309,86 @@ section#buy_self_storage .angle_deco img {
     bottom: -65px;
     left: 30px;
     height: 670px;
+}
+
+section#learn {
+    padding: 90px 0;
+    border-top-left-radius: 300px;
+    overflow: hidden;
+    background-color: #1849C6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#learn header {
+    color: #FFFFFF;
+}
+section#learn header h2 {
+    margin: 0 auto;
+    width: 65%;
+}
+section#learn header img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.2;
+    top: 300px;
+    left: 0;
+    z-index: 0;
+}
+section#learn .carousel figure {
+    flex: 1 1 20%;
+}
+section#learn .carousel figure img {
+    height: 200px;
+}
+section#learn .carousel figure figcaption h3 {
+    font-size: 1em;
+}
+section#learn i.circle.left {
+    width: 174px;
+    height: 174px;
+    top: 500px;
+    left: -220px;
+    opacity: 0.2;
+}
+section#learn i.circle.right {
+    width: 90px;
+    height: 90px;
+    opacity: 0.2;
+    top: 100px;
+    right: -85px;
+    border-width: 40px;
+}
+section#learn a.view_more {
+    width: 300px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section#queries {
+    padding: 145px 220px;
+    background: linear-gradient(0deg, rgba(232, 239, 255, 0.9) 50%, rgba(232, 239, 255, 0.9) 50%), url('../images/6488e264345087c828b30e355d3a9db4.png');
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #021850;
+}
+section#queries .queries_container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 110px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+section#queries .queries_container header p {
+    margin-bottom: 0px;
+    text-align: left;
+    width: 100%;
+}
+section#queries .queries_container a.primary_alt_btn {
+    height: 40px;
+    line-height: 40px;
 }
